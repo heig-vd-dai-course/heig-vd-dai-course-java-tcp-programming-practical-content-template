@@ -10,7 +10,7 @@ public class Client implements Callable<Integer> {
       names = {"-H", "--host"},
       description = "Host to connect to.",
       required = true)
-  private String host;
+  protected String host;
 
   @CommandLine.Option(
       names = {"-p", "--port"},
