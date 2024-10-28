@@ -5,7 +5,6 @@ import picocli.CommandLine;
 
 @CommandLine.Command(name = "client", description = "Start the client part of the network game.")
 public class Client implements Callable<Integer> {
-  @CommandLine.ParentCommand protected Root parent;
 
   @CommandLine.Option(
       names = {"-H", "--host"},
