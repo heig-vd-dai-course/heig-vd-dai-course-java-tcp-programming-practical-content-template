@@ -8,7 +8,8 @@ public class Client implements Callable<Integer> {
 
   @CommandLine.Option(
       names = {"-H", "--host"},
-      description = "Host to connect to.")
+      description = "Host to connect to.",
+      required = true)
   private String host;
 
   @CommandLine.Option(
